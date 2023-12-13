@@ -30,3 +30,6 @@ pip install selenium
 python main.py
 ```
 
+## TODO
+
+通过github actions来实现全自动抢讲座以及订阅消息功能

@@ -41,12 +41,12 @@ while True:
     if time_now == time_start:
         break
 
-while True:
-    try:
-        element_baoming = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/section/div/div[3]/div[3]/table/tbody/tr[1]/td[8]/div/button")))
-        element_baoming.click()
-        element_sure = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[3]/button[2]")))
-        element_sure.click()
-    except:
-        print("时间未到，重复尝试中...")
-        pass
+
+try:
+    element_baoming = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/section/div/div[3]/div[3]/table/tbody/tr[1]/td[8]/div/button")))
+    element_baoming.click()
+    element_sure = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[3]/button[2]")))
+    element_sure.click()
+except:
+    print("失败...")
+    pass

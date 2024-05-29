@@ -14,12 +14,13 @@
 
 下载与浏览器对应版本号的ChromeDriver（根据自己系统下载对应版本）
 
-解压后放到根目录下 文件夹名字为chromdriver
+解压后放到根目录下 文件夹名字为chromedriver
 
 ## 配置环境
 
 ```
 pip install selenium
+pip install webdriver-manager
 ```
 
 ## 运行脚本

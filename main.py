@@ -47,6 +47,7 @@ try:
     element_baoming.click()
     element_sure = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[3]/button[2]")))
     element_sure.click()
+    print("成功...")
 except:
     print("失败...")
     pass

@@ -1,25 +1,12 @@
-## 浙江大学电气学院讲座脚本
-
-## 准备工作
-
-### 下载Google浏览器
-
-**查看版本号**
-
-设置-->关于 Chrome-->版本 120.0.6099.71（正式版本） （64 位）
-
-### 下载ChromeDriver
-
-网址：https://googlechromelabs.github.io/chrome-for-testing/
-
-下载与浏览器对应版本号的ChromeDriver（根据自己系统下载对应版本）
-
-解压后放到根目录下 文件夹名字为chromdriver
+## 浙江大学电气学院学术讲座自动报名脚本
 
 ## 配置环境
 
+Python>=3.9 （Python=3.11 经测试可完美运行）
+
 ```
 pip install selenium
+pip install webdriver-manager
 ```
 
 ## 运行脚本
@@ -30,6 +17,9 @@ pip install selenium
 python main.py
 ```
 
+**注意**：请将打开的窗口最大化！否则将会闪退！
+
 ## TODO
 
-通过github actions来实现全自动抢讲座以及订阅消息功能
+* [X] 取消GoogleDriver的驱动需求，一键适配
+* [ ] 通过github actions来实现全自动抢讲座以及订阅消息功能

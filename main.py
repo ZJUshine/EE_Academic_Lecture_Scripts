@@ -50,14 +50,7 @@ while True:
 try:
     element_baoming = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[2]/div[2]/main/div/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[8]/div/button/span")))
     element_baoming.click()
-    
-    # 等待并点击确定按钮
-    element_sure = WebDriverWait(driver,10).until(
-        EC.element_to_be_clickable(
-            (By.XPATH, "//div[@role='dialog']//button[contains(., '确定')]")
-        )
-    )
-    element_sure.click()
+
     print("成功...")
 except Exception as e:
     print("失败:", str(e))
